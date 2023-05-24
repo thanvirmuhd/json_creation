@@ -42,9 +42,9 @@ return (
 todo.map((item,index)=>{
 return(
 <tr key={index}>
-<td><input type="checkbox" name="" id="" /></td>
+<td><input type="checkbox" checked={item.completed} /></td>
 <td>{item.title}</td>
-<td>{item.completed}</td>
+<td>{item.completed?"completed":"pending"}</td>
 </tr>
 )
 })
